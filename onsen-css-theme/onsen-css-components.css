@@ -1,0 +1,991 @@
+/* Custom Theme for Onsen UI 2.10.5 */
+
+/*!
+ * Copyright 2013-2017 ASIAL CORPORATION
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+/*!
+ * Copyright 2012 Adobe Systems Inc.;
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
+:root {
+  /* variables for iOS components */
+
+  /* variables for Material Design components */
+
+  /* others */
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  touch-action: manipulation;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+input, textarea, select {
+  -webkit-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+  -moz-user-select: text;
+  -webkit-touch-callout: none;
+}
+a, button, input, textarea, select {
+  touch-action: manipulation;
+}
+input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
+  outline: none;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4, h5, h6 {
+  font-size: 18px;
+}
+:root {
+}
+/*~
+  name: Alert Dialog
+  category: Alert Dialog
+  elements: ons-alert-dialog
+  markup: |
+    <div class="alert-dialog-mask"></div>
+    <div class="alert-dialog">
+      <div class="alert-dialog-container">
+        <div class="alert-dialog-title">Alert</div>
+
+        <div class="alert-dialog-content">
+          Hello World!
+        </div>
+
+        <div class="alert-dialog-footer">
+          <button class="alert-dialog-button alert-dialog-button--primal">OK</button>
+        </div>
+      </div>
+    </div>
+*/
+.alert-dialog {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 270px;
+  margin: auto;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  overflow: visible;
+  max-width: 95%;
+  color: #1f1f21;
+}
+.alert-dialog-container {
+  height: inherit;
+  padding-top: 16px;
+  overflow: hidden;
+}
+.alert-dialog-title {
+  font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0 8px;
+  text-align: center;
+  color: #1f1f21;
+}
+.alert-dialog-content {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 4px 12px 8px;
+  font-size: 14px;
+  min-height: 36px;
+  text-align: center;
+  color: #1f1f21;
+}
+.alert-dialog-footer {
+  width: 100%;
+}
+.alert-dialog-button {
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  font-family: -apple-system, 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  letter-spacing: 0;
+  vertical-align: middle;
+  border: none;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  padding: 0 8px;
+  margin: 0;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  outline: none;
+  color: #0076ff;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .alert-dialog-button {
+    border-top: none;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: linear-gradient(180deg, #ddd, #ddd 50%, transparent 50%);
+  }
+}
+.alert-dialog-button:active {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, .05);
+}
+.alert-dialog-button--primal {
+  font-weight: 500;
+}
+.alert-dialog-footer--rowfooter {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.alert-dialog-button--rowfooter {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: block;
+  width: 100%;
+  border-left: 1px solid #ddd;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .alert-dialog-button--rowfooter {
+    border-top: none;
+    border-left: none;
+    background-size: 100% 1px, 1px 100%;
+    background-repeat: no-repeat;
+    background-position: top, left;
+    background-image:
+      linear-gradient(0deg, transparent, transparent 50%, #ddd 50%),
+      linear-gradient(90deg, transparent, transparent 50%, #ddd 50%);
+  }
+}
+.alert-dialog-button--rowfooter:first-child {
+  border-left: none;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .alert-dialog-button--rowfooter:first-child {
+    border-top: none;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top, left;
+    background-image: linear-gradient(0deg, transparent, transparent 50%, #ddd 50%);
+  }
+}
+.alert-dialog-mask {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, .2);
+}
+/*~
+  name: Alert Dialog without Title
+  category: Alert Dialog
+  elements: ons-alert-dialog
+  markup: |
+    <div class="alert-dialog-mask"></div>
+    <div class="alert-dialog">
+      <div class="alert-dialog-container">
+        <div class="alert-dialog-content">
+          Hello World!
+        </div>
+
+        <div class="alert-dialog-footer">
+          <button class="alert-dialog-button alert-dialog-button--primal">OK</button>
+        </div>
+      </div>
+    </div>
+*/
+/*~
+  name: Alert Dialog with Multiple Buttons
+  category: Alert Dialog
+  elements: ons-alert-dialog
+  markup: |
+    <div class="alert-dialog-mask"></div>
+    <div class="alert-dialog">
+      <div class="alert-dialog-container">
+        <div class="alert-dialog-content">
+          Hello World!
+        </div>
+
+        <div class="alert-dialog-footer">
+          <button class="alert-dialog-button">Cancel</button>
+          <button class="alert-dialog-button alert-dialog-button--primal">OK</button>
+        </div>
+      </div>
+    </div>
+*/
+/*~
+  name: Alert Dialog with Multiple Buttons 2
+  category: Alert Dialog
+  elements: ons-alert-dialog
+  markup: |
+    <div class="alert-dialog-mask"></div>
+    <div class="alert-dialog">
+      <div class="alert-dialog-container">
+        <div class="alert-dialog-title">Alert</div>
+
+        <div class="alert-dialog-content">
+          Hello World!
+        </div>
+
+        <div class="alert-dialog-footer alert-dialog-footer--rowfooter">
+          <button class="alert-dialog-button alert-dialog-button--rowfooter">Left</button>
+          <button class="alert-dialog-button alert-dialog-button--primal alert-dialog-button--rowfooter">Center</button>
+          <button class="alert-dialog-button alert-dialog-button--rowfooter">Right</button>
+        </div>
+      </div>
+    </div>
+*/
+/*~
+  name: Material Alert Dialog
+  category: Alert Dialog
+  elements: ons-alert-dialog
+  markup: |
+    <div class="alert-dialog-mask alert-dialog-mask--material"></div>
+    <div class="alert-dialog alert-dialog--material">
+      <div class="alert-dialog-container alert-dialog-container--material">
+        <div class="alert-dialog-title alert-dialog-title--material">
+          Dialog title
+        </div>
+        <div class="alert-dialog-content alert-dialog-content--material">
+          Some dialog content.
+        </div>
+        <div class="alert-dialog-footer alert-dialog-footer--material">
+          <button class="alert-dialog-button alert-dialog-button--material">OK</button>
+          <button class="alert-dialog-button alert-dialog-button--material">CANCEL</button>
+        </div>
+      </div>
+    </div>
+*/
+.alert-dialog--material {
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.alert-dialog-container--material {
+  padding: 22px 0 0 0;
+  box-shadow:
+      0 16px 24px 2px rgba(0, 0, 0, .14),
+      0 6px 30px 5px rgba(0, 0, 0, .12),
+      0 8px 10px -5px rgba(0, 0, 0, .4);
+}
+.alert-dialog-title--material {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 24px;
+  color: #31313a;
+}
+.alert-dialog-content--material {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0 24px;
+  margin: 24px 0 10px 0;
+  min-height: 0;
+  color: #31313a;
+  color: rgba(49, 49, 58, .85);
+}
+.alert-dialog-footer--material {
+  display: block;
+  padding: 0;
+  height: 52px;
+  box-sizing: border-box;
+  margin: 0;
+  line-height: 1;
+}
+.alert-dialog-button--material {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  width: auto;
+  float: right;
+  background: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 8px;
+  margin: 8px 8px 8px 0;
+  box-sizing: border-box;
+  min-width: 50px;
+  color: #37474f;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .alert-dialog-button--material {
+    background: none;
+  }
+}
+.alert-dialog-button--material:active {
+  background-color: transparent;
+  background-color: initial;
+}
+/* stylelint-disable */
+.alert-dialog-button--rowfooter--material,
+.alert-dialog-button--rowfooter--material:first-child { /* stylelint-enable */
+  border: 0;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .alert-dialog-button--rowfooter--material,
+.alert-dialog-button--rowfooter--material:first-child {
+    background: none;
+  }
+}
+/* stylelint-disable */
+.alert-dialog-button--primal--material { /* stylelint-enable */
+  font-weight: 500;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+  .alert-dialog-button--primal--material {
+    background: none;
+  }
+}
+.alert-dialog-mask--material {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, .3);
+}
+/* ------- */
+/* Default */
+/* ------- */
+/* All toolbar */
+.toolbar {
+  top: 0;
+  box-sizing: border-box;
+  padding-top: 0;
+}
+.bottom-bar {
+  bottom: 0;
+  box-sizing: border-box;
+  padding-bottom: 0;
+}
+/* All page__background with a ordinal toolbar */
+.toolbar+.page__background {
+  top: var(--toolbar-height);
+}
+/* All page__content without toolbars */
+.page__content {
+  top: 0;
+  padding-top: 0;
+
+  bottom: 0;
+}
+/* All page__content with a toolbar */
+.toolbar+.page__background+.page__content {
+  top: var(--toolbar-height);
+  padding-top: 0;
+}
+/* All page__content with a bottom-bar */
+.page-with-bottom-toolbar > .page__content {
+  bottom: 44px;
+}
+/* -------- */
+/* Material */
+/* -------- */
+/* All page__background with a material toolbar */
+.toolbar.toolbar--material+.page__background {
+  top: var(--toolbar-material-height);
+}
+/* All page__content with a material toolbar */
+.toolbar.toolbar--material+.page__background+.page__content {
+  top: var(--toolbar-material-height);
+  padding-top: 0;
+}
+/* -------- */
+/*  Others  */
+/* -------- */
+/* All page__background with a transparent toolbar */
+.toolbar.toolbar--transparent+.page__background {
+  top: 0;
+}
+/* All page__content with a transparent cover-content toolbar and its direct descendant page_content */
+.toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content,
+.toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content .page_content {
+  top: 0;
+  padding-top: var(--toolbar-height);
+}
+/* All page__content with a material transparent cover-content toolbar and its direct descendant page_content */
+.toolbar.toolbar--material.toolbar--transparent.toolbar--cover-content+.page__background+.page__content,
+.toolbar.toolbar--material.toolbar--transparent.toolbar--cover-content+.page__background+.page__content .page_content {
+  top: 0;
+  padding-top: var(--toolbar-material-height);
+}
+/* -------- */
+/*  Tabbar  */
+/* -------- */
+/* All top tabbar */
+.tabbar--top {
+  padding-top: 0;
+}
+/* All bottom tabbar */
+.tabbar:not(.tabbar--top) {
+  padding-bottom: 0;
+} /* non BEM */
+/* @import './util.css'; */
+@media (orientation: landscape) {
+  html[onsflag-iphonex-landscape] .page__content {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+  /* Ignore if the page is in dialogs or modals */
+  html[onsflag-iphonex-landscape] .dialog .page__content,
+  html[onsflag-iphonex-landscape] .modal .page__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* @import './switch.css'; */
+/* @import './range.css'; */
+/* @import './notification.css'; */
+@media (orientation: landscape) {
+  html[onsflag-iphonex-landscape] .toolbar__left {
+    padding-left: 44px;
+  }
+
+  html[onsflag-iphonex-landscape] .toolbar__right {
+    padding-right: 44px;
+  }
+
+  html[onsflag-iphonex-landscape] .bottom-bar {
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+}
+/* @import './button.css'; */
+/* @import './button-bar.css'; */
+/* @import './segment.css'; */
+@media (orientation: landscape) {
+  html[onsflag-iphonex-landscape] .tabbar {
+    padding-left: 44px;
+    padding-right: 44px;
+    width: calc(100% - 88px);
+  }
+}
+/* @import './toolbar-button.css'; */
+/* @import './checkbox.css'; */
+/* @import './radio-button.css'; */
+/* @import './list.css'; */
+/* @import './search-input.css'; */
+/* @import './text-input.css'; */
+/* @import './textarea.css'; */
+/* @import './dialog.css'; */
+/* @import './alert-dialog.css'; */
+/* @import './popover.css'; */
+/* @import './progress-bar.css'; */
+/* @import './progress-circular.css'; */
+@media (orientation: portrait) {
+  /* For top safe area */
+  html[onsflag-iphonex-portrait] .fab--top__left,
+  html[onsflag-iphonex-portrait] .fab--top__center,
+  html[onsflag-iphonex-portrait] .fab--top__right {
+    top: 64px;
+  }
+
+  /* For bottom safe area */
+  html[onsflag-iphonex-portrait] .fab--bottom__left,
+  html[onsflag-iphonex-portrait] .fab--bottom__center,
+  html[onsflag-iphonex-portrait] .fab--bottom__right {
+    bottom: 34px; /* Omit 20px space */
+  }
+}
+@media (orientation: landscape) {
+  /* For bottom safe area */
+  html[onsflag-iphonex-landscape] .fab--bottom__left,
+  html[onsflag-iphonex-landscape] .fab--bottom__center,
+  html[onsflag-iphonex-landscape] .fab--bottom__right {
+    bottom: 21px; /* Omit 20px space */
+  }
+  
+  /* For left safe area */
+  html[onsflag-iphonex-landscape] .fab--top__left,
+  html[onsflag-iphonex-landscape] .fab--bottom__left {
+    left: 44px; /* Omit 20px space */
+  }
+
+  /* For right safe area */
+  html[onsflag-iphonex-landscape] .fab--top__right,
+  html[onsflag-iphonex-landscape] .fab--bottom__right {
+    right: 44px; /* Omit 20px space */
+  }
+}
+/* @import './modal.css'; */
+/* @import './select.css'; */
+@media (orientation: portrait) {
+  html[onsflag-iphonex-portrait] .action-sheet {
+    bottom: 48px; /* bottom safe area + 14 pt (extra bottom margin) */
+  }
+}
+@media (orientation: landscape) {
+  html[onsflag-iphonex-landscape] .action-sheet {
+    /* The width in landscape mode is the same as the width in portrait mode */
+    left: calc((100vw - 100vh + 20px) / 2);
+    right: calc((100vw - 100vh + 20px) / 2);
+    bottom: 33px; /* bottom safe area + 12 pt (extra bottom margin) */
+  }
+}
+/* @import './card.css'; */
+@media (orientation: portrait) {
+  html[onsflag-iphonex-portrait] .toast {
+    bottom: 34px;
+  }
+}
+@media (orientation: landscape) {
+  html[onsflag-iphonex-landscape] .toast {
+    left: 52px;
+    right: 52px;
+    bottom: 21px;
+  }
+}
+/*
+  Note:
+
+  :not(X) does not work if X is a complex selector like `.foo .bar` due to the spec of :not(X).
+  Instead we have to use the following form for representing A:not(X A):not(Y A):not(Z A),
+  which means `A which does not have any X, Y and Z as its ancestors`.
+
+  // Equivalent to A:not(X A):not(Y A):not(Z A) { foo: bar; }
+  A {
+    // Apply styles for A
+    foo: bar;
+  }
+  X A,
+  Y A,
+  Z A {
+    // Subtract `X A`, `Y A` and `Z A`
+    // (Restore original styles of A)
+  }
+*/
+/*
+  Note:
+
+  @apply has been deprecated as of Oct, 2017.
+  Please do not use @apply to restore original styles.
+*/
+/* Bars and page contents */
+@media (orientation: portrait) {
+  /* Outermost toolbar */
+  html[onsflag-iphonex-portrait] .toolbar {
+    top: 0;
+    box-sizing: content-box;
+    padding-top: 44px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .toolbar, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .toolbar, /* if wrapped with a page with a toolbar */
+  html[onsflag-iphonex-portrait] .tabbar--top__content .toolbar { /* if wrapped with a top tabbar */
+    /* Restore original styles */
+    top: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+  }
+
+  /* Outermost bottom-bar */
+  html[onsflag-iphonex-portrait] .bottom-bar {
+    bottom: 0;
+    box-sizing: content-box;
+    padding-bottom: 34px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .bottom-bar, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .page-with-bottom-toolbar > .page__content .bottom-bar, /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-portrait] .tabbar__content:not(.tabbar--top__content) .bottom-bar { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    bottom: 0;
+    box-sizing: border-box;
+    padding-bottom: 0;
+  }
+
+  /* Outermost page__content without toolbars or bottom-bars */
+  html[onsflag-iphonex-portrait] .page__content {
+    top: 0;
+    padding-top: 44px;
+    bottom: 0;
+    padding-bottom: 34px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .page__content, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .page__content, /* if wrapped with a page with a toolbar */
+  html[onsflag-iphonex-portrait] .tabbar--top__content .page__content, /* if wrapped with a top tabbar */
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content { /* if the page has a toolbar */
+    /* Restore original styles */
+    top: 0;
+    padding-top: 0;
+  }
+  html[onsflag-iphonex-portrait] .dialog .page__content, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .page-with-bottom-toolbar > .page__content .page__content, /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-portrait] .tabbar__content:not(.tabbar--top__content) .page__content, /* if wrapped with a bottom tabbar */
+  html[onsflag-iphonex-portrait] .page-with-bottom-toolbar > .page__content { /* if the page has a bottom-bar */
+    /* Restore original styles */
+    bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Outermost page__content with a toolbar */
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background,
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content {
+    top: calc(44px + var(--toolbar-height));
+    padding-top: 0;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .toolbar:not(.toolbar--cover-content)+.page__background,
+  html[onsflag-iphonex-portrait] .dialog .toolbar:not(.toolbar--cover-content)+.page__background+.page__content, /* if wrapped with dialogs */
+
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .toolbar:not(.toolbar--cover-content)+.page__background,
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .toolbar:not(.toolbar--cover-content)+.page__background+.page__content, /* if wrapped with a page with a toolbar */
+
+  html[onsflag-iphonex-portrait] .tabbar--top__content .toolbar:not(.toolbar--cover-content)+.page__background,
+  html[onsflag-iphonex-portrait] .tabbar--top__content .toolbar:not(.toolbar--cover-content)+.page__background+.page__content { /* if wrapped with a top tabbar */
+    /* Restore original styles */
+    top: var(--toolbar-height);
+    padding-top: 0;
+  }
+
+  /* Outermost page__content with a bottom-bar */
+  html[onsflag-iphonex-portrait] .page-with-bottom-toolbar > .page__content {
+    bottom: calc(34px + var(--toolbar-height));
+    padding-bottom: 0;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .page-with-bottom-toolbar > .page__content, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .page-with-bottom-toolbar > .page__content .page-with-bottom-toolbar > .page__content, /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-portrait] .tabbar__content:not(.tabbar--top__content) .page-with-bottom-toolbar > .page__content { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    bottom: var(--toolbar-height);
+    padding-bottom: 0;
+  }
+
+  /* Outermost page__content with a transparent cover-content toolbar and its direct descendant page_content */
+  html[onsflag-iphonex-portrait] .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content,
+  html[onsflag-iphonex-portrait] .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content .page_content {
+    top: 0;
+    padding-top: calc(44px + var(--toolbar-height));
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .dialog .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content .page_content,
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content, /* if wrapped with a page with a toolbar */
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content .page__content,
+  html[onsflag-iphonex-portrait] .tabbar--top__content .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content,
+  html[onsflag-iphonex-portrait] .tabbar--top__content .toolbar.toolbar--transparent.toolbar--cover-content+.page__background+.page__content .page_content {  /* if wrapped with a top tabbar */
+    /* Restore original styles */
+    top: 0;
+    padding-top: var(--toolbar-height);
+  }
+
+  /* Outermost top tabbar */
+  html[onsflag-iphonex-portrait] .tabbar--top {
+    padding-top: 44px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .tabbar--top, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .tabbar--top, /* if wrapped with a page with a toolbar */
+  html[onsflag-iphonex-portrait] .tabbar--top__content .tabbar--top { /* if wrapped with a top tabbar */
+    /* Restore original styles */
+    padding-top: 0;
+  }
+
+  /* Outermost tabbar--top__content */
+  html[onsflag-iphonex-portrait] .tabbar--top__content {
+    top: calc(44px + var(--tabbar-height));
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .tabbar--top__content, /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .toolbar:not(.toolbar--cover-content)+.page__background+.page__content .tabbar--top__content, /* if wrapped with a page with a toolbar */
+  html[onsflag-iphonex-portrait] .tabbar--top__content .tabbar--top__content { /* if wrapped with a top tabbar */
+    /* Restore original styles */
+    top: var(--tabbar-height);
+  }
+
+  /* Outermost bottom tabbar */
+  html[onsflag-iphonex-portrait] .tabbar:not(.tabbar--top):not(.tabbar--top) {
+    padding-bottom: 34px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .tabbar:not(.tabbar--top):not(.tabbar--top), /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .page-with-bottom-toolbar > .page__content .tabbar:not(.tabbar--top), /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-portrait] .tabbar__content:not(.tabbar--top__content) .tabbar:not(.tabbar--top) { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    padding-bottom: 0;
+  }
+
+  /* Outermost.tabbar__content:not(.tabbar--top__content) */
+  html[onsflag-iphonex-portrait] .tabbar__content:not(.tabbar--top__content) {
+    bottom: calc(34px + var(--tabbar-height));
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-portrait] .dialog .tabbar__content:not(.tabbar--top__content), /* if wrapped with dialogs */
+  html[onsflag-iphonex-portrait] .page-with-bottom-toolbar > .page__content .tabbar__content:not(.tabbar--top__content), /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-portrait] .tabbar__content:not(.tabbar--top__content) .tabbar__content:not(.tabbar--top__content) { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    bottom: var(--tabbar-height);
+  }
+}
+@media (orientation: landscape) {
+  /* Outermost bottom-bar */
+  html[onsflag-iphonex-landscape] .bottom-bar {
+    bottom: 0;
+    box-sizing: content-box;
+    padding-bottom: 21px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-landscape] .dialog .bottom-bar, /* if wrapped with dialogs */
+  html[onsflag-iphonex-landscape] .page-with-bottom-toolbar > .page__content .bottom-bar, /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-landscape] .tabbar__content:not(.tabbar--top__content) .bottom-bar { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    bottom: 0;
+    box-sizing: border-box;
+    padding-bottom: 0;
+  }
+
+  /* Outermost page__content without bottom-bars */
+  html[onsflag-iphonex-landscape] .page__content {
+    bottom: 0;
+    padding-bottom: 21px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-landscape] .dialog .page__content, /* if wrapped with dialogs */
+  html[onsflag-iphonex-landscape] .page-with-bottom-toolbar > .page__content .page__content, /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-landscape] .tabbar__content:not(.tabbar--top__content) .page__content, /* if wrapped with a bottom tabbar */
+  html[onsflag-iphonex-landscape] .page-with-bottom-toolbar > .page__content { /* if the page has a bottom-bar */
+    /* Restore original styles */
+    bottom: 0;
+    padding-bottom: 0;
+  }
+
+  /* Outermost page__content with a bottom-bar */
+  html[onsflag-iphonex-landscape] .page-with-bottom-toolbar > .page__content {
+    bottom: calc(21px + var(--toolbar-height));
+    padding-bottom: 0;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-landscape] .dialog .page-with-bottom-toolbar > .page__content, /* if wrapped with dialogs */
+  html[onsflag-iphonex-landscape] .page-with-bottom-toolbar > .page__content .page-with-bottom-toolbar > .page__content, /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-landscape] .tabbar__content:not(.tabbar--top__content) .page-with-bottom-toolbar > .page__content { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    bottom: var(--toolbar-height);
+    padding-bottom: 0;
+  }
+
+  /* Outermost bottom tabbar */
+  html[onsflag-iphonex-landscape] .tabbar:not(.tabbar--top) {
+    padding-bottom: 21px;
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-landscape] .dialog .tabbar:not(.tabbar--top), /* if wrapped with dialogs */
+  html[onsflag-iphonex-landscape] .page-with-bottom-toolbar > .page__content .tabbar:not(.tabbar--top), /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-landscape] .tabbar__content:not(.tabbar--top__content) .tabbar:not(.tabbar--top) { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    padding-bottom: 0;
+  }
+
+  /* Outermost.tabbar__content:not(.tabbar--top__content) */
+  html[onsflag-iphonex-landscape] .tabbar__content:not(.tabbar--top__content) {
+    bottom: calc(21px + var(--tabbar-height));
+  }
+  /* Non-outermost */
+  html[onsflag-iphonex-landscape] .dialog .tabbar__content:not(.tabbar--top__content), /* if wrapped with dialogs */
+  html[onsflag-iphonex-landscape] .page-with-bottom-toolbar > .page__content .tabbar__content:not(.tabbar--top__content), /* if wrapped with a page with a bottom-bar */
+  html[onsflag-iphonex-landscape] .tabbar__content:not(.tabbar--top__content) .tabbar__content:not(.tabbar--top__content) { /* if wrapped with a bottom tabbar */
+    /* Restore original styles */
+    bottom: var(--tabbar-height);
+  }
+}
+/* Lists in .page__content */
+@media (orientation: landscape) {
+  /* Only patching lists just under .page__content */
+  html[onsflag-iphonex-landscape] .page__content > .list:not(.list--inset) {
+    margin-left: -44px;
+    margin-right: -44px;
+  }
+
+  /* For left safe area */
+  html[onsflag-iphonex-landscape] .page__content > .list:not(.list--inset) > .list-header {
+    padding-left: 59px;
+  }
+  html[onsflag-iphonex-landscape] .page__content > .list:not(.list--inset) > .list-item {
+    /* margin-left is not suitable for iPhone X patch. Using padding-left here. */
+    padding-left: 58px;
+  }
+
+  /* For right safe area */
+  html[onsflag-iphonex-landscape] .page__content > .list:not(.list--inset) > .list-item--chevron:before {
+    right: 60px;
+  }
+  html[onsflag-iphonex-landscape] .page__content > .list:not(.list--inset) > .list-item > .list-item__center:last-child {
+    padding-right: 50px;
+  }
+  html[onsflag-iphonex-landscape] .page__content > .list:not(.list--inset) > .list-item > .list-item__right {
+    padding-right: 56px;
+  }
+  html[onsflag-iphonex-landscape] .page__content > .list:not(.list--inset) > .list-item > .list-item--chevron__right {
+    padding-right: 74px;
+  }
+}
+/* Lists in .page__content in dialogs and modals */
+@media (orientation: landscape) {
+  /* Only patching lists just under .page__content */
+  html[onsflag-iphonex-landscape] .dialog .page__content > .list:not(.list--inset) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* For left safe area */
+  html[onsflag-iphonex-landscape] .dialog .page__content > .list:not(.list--inset) > .list-header {
+    padding-left: 15px;
+  }
+  html[onsflag-iphonex-landscape] .dialog .page__content > .list:not(.list--inset) > .list-item {
+    padding-left: 14px;
+  }
+
+  /* For right safe area */
+  html[onsflag-iphonex-landscape] .dialog .page__content > .list:not(.list--inset) > .list-item--chevron:before {
+    right: 16px;
+  }
+  html[onsflag-iphonex-landscape] .dialog .page__content > .list:not(.list--inset) > .list-item > .list-item__center:last-child {
+    padding-right: 6px;
+  }
+  html[onsflag-iphonex-landscape] .dialog .page__content > .list:not(.list--inset) > .list-item > .list-item__right {
+    padding-right: 12px;
+  }
+  html[onsflag-iphonex-landscape] .dialog .page__content > .list:not(.list--inset) > .list-item > .list-item--chevron__right {
+    padding-right: 30px;
+  }
+}
+/* non BEM */
