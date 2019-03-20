@@ -585,15 +585,15 @@ style="box-sizing: border-box;padding:10px 15px;color:#fff;border-radius:3px;wid
 	var utm_content = getURLParameter('utm_content');
 	var tm_campaign = getURLParameter('tm_campaign');
 	var hl = getURLParameter('hl');
-	
-	var a = document.getElementById('letmeoutofhere'); //or grab it by tagname etc
-	console.log("a",a);
-	a.href = "https://play.google.com/store/apps/details?id=" + id + 
+	var linkurl = "https://play.google.com/store/apps/details?id=" + id + 
 		"&referrer=utm_source%3D" + utm_source + 
 		"%26utm_medium%3D" + utm_medium + 
 		"%26utm_term%3D" + utm_term +
 		"%26utm_content%3D" + utm_content +
-		"%26utm_campaign%3D" + tm_campaign
+		"%26utm_campaign%3D" + tm_campaign;
+	var a = document.getElementById('letmeoutofhere'); //or grab it by tagname etc
+	console.log("url",linkurl);
+	a.href = linkurl;
 </script>
 
 </body>
